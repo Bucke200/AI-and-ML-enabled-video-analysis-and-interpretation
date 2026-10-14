@@ -5,10 +5,8 @@ Simple model to _"Detect/Track"_ and _"Re-identify"_ individuals in different ca
 <img align="right" img src="assets/2.gif" width="380" />  <img align="left" img src="assets/1.gif" width="380" />
 
 ```mermaid
-flowchart TD
-    A["Cameras / input videos"] --> B["Detection and Tracking<br/>YOLOv3 or YOLOv4 + DeepSORT"]
-    B --> C["Re-Identification<br/>TorchReID"]
-    C --> D["Fused person IDs across cameras"]
+flowchart LR
+    A["Cameras"] --> B["Tracking<br/>YOLO + DeepSORT"] --> C["Re-identification<br/>TorchReID"] --> D["Fused IDs"]
 ```
 
 <p align="center">
