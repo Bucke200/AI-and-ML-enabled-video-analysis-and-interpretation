@@ -3,9 +3,14 @@
 Simple model to _"Detect/Track"_ and _"Re-identify"_ individuals in different cameras/videos.
 
 <img align="right" img src="assets/2.gif" width="380" />  <img align="left" img src="assets/1.gif" width="380" />
-<p align="center">
-  <img src="assets/arrow.png" width="400"/>
-</p>
+
+```mermaid
+flowchart TD
+    A["Cameras / input videos"] --> B["Detection and Tracking<br/>YOLOv3 or YOLOv4 + DeepSORT"]
+    B --> C["Re-Identification<br/>TorchReID"]
+    C --> D["Fused person IDs across cameras"]
+```
+
 <p align="center">
   <img src="assets/3.gif" width="500"/>
 </p>
