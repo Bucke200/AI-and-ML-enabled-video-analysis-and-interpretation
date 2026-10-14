@@ -1,3 +1,11 @@
 __pycache__/
 model_data/models/*
+
+# Media: input clips and converted output previews are committed,
+# generated outputs (.avi, tracklets) stay local
 videos/*
+!videos/init/
+!videos/output/
+videos/output/*
+!videos/output/*.mp4
+!videos/output/*.txt
