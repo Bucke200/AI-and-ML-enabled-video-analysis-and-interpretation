@@ -87,13 +87,3 @@ Under the directory `\videos\output`, the program will generate:
  * `tracking.avi` — a video of the tracking
  * `Complete.avi` — a video of the tracking and ReID (as can be seen in the example above)
  * `tracking.txt` — the tracking results in MOT format
-
-# Acknowledgement
-This project is based on the original [Multi-Camera Person Tracking and Re-Identification](https://github.com/samihormi/Multi-Camera-Person-Tracking-and-Re-Identification) by [@samihormi](https://github.com/samihormi).
-
-This model is build on top of the incredible work done in the following projects:
-  * https://github.com/nwojke/cosine_metric_learning
-  * https://github.com/KaiyangZhou/deep-person-reid
-  * https://github.com/Qidian213/deep_sort_yolov3
-  * https://github.com/Ma-Dan/keras-yolo4
-  * https://github.com/lyrgwlr/Human-tracking-multicam
